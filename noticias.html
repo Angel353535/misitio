@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu Sitio Web - Noticias</title>
+    
+    <!-- Enlace a Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    
+    <style>
+        /* Estilos personalizados para la página */
+        body {
+            background-color: #fff; /* Fondo blanco */
+            color: #000; /* Texto negro */
+        }
+        .navbar {
+            background-color: #58B2AF; /* Color del menú */
+        }
+        .jumbotron {
+            background-color: #fff; /* Fondo blanco */
+            color: #000; /* Texto negro */
+            padding: 40px;
+        }
+        .carousel-indicators li {
+            border: 1px solid #58B2AF; /* Borde de los indicadores */
+            background-color: transparent;
+        }
+        .carousel-control-prev, .carousel-control-next {
+            color: #58B2AF; /* Color de las flechas */
+        }
+        .carousel-item img {
+            max-width: 400px; /* Tamaño máximo de la imagen */
+        }
+        .modal-content {
+            background-color: #fff; /* Fondo blanco del modal */
+        }
+        .modal-content p {
+            background-color: rgba(88, 178, 175, 0.7); /* Fondo semitransparente del texto */
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Menú -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Inicio</a>
+            <a class="navbar-brand" href="equipo.html">Equipo</a>
+            <a class="navbar-brand" href="noticias.html">Noticias</a>
+        </div>
+    </nav>
+    
+    <!-- Jumbotron con Carrusel de Noticias -->
+    <div class="jumbotron">
+        <h1>Últimas Noticias</h1>
+        <div id="noticiasCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicadores del Carrusel -->
+            <ol class="carousel-indicators">
+                <li data-target="#noticiasCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#noticiasCarousel" data-slide-to="1"></li>
+                <li data-target="#noticiasCarousel" data-slide-to="2"></li>
+                <li data-target="#noticiasCarousel" data-slide-to="3"></li>
+                <li data-target="#noticiasCarousel" data-slide-to="4"></li>
+            </ol>
+            
+            <!-- Imágenes y Texto de las Noticias -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/noticia1.jpg" alt="Noticia 1">
+                    <div class="carousel-caption">
+                        <p>Fondo semitransparente con texto de la noticia. <a href="#modal1" data-toggle="modal">Ver más</a></p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/noticia2.jpg" alt="Noticia 2">
+                    <div class="carousel-caption">
+                        <p>Fondo semitransparente con texto de la noticia. <a href="#modal2" data-toggle="modal">Ver más</a></p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/noticia3.jpg" alt="Noticia 3">
+                    <div class="carousel-caption">
+                        <p>Fondo semitransparente con texto de la noticia. <a href="#modal3" data-toggle="modal">Ver más</a></p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/noticia4.jpg" alt="Noticia 4">
+                    <div class="carousel-caption">
+                        <p>Fondo semitransparente con texto de la noticia. <a href="#modal4" data-toggle="modal">Ver más</a></p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/noticia5.jpg" alt="Noticia 5">
+                    <div class="carousel-caption">
+                        <p>Fondo semitransparente con texto de la noticia. <a href="#modal5" data-toggle="modal">Ver más</a></p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Flechas de Navegación del Carrusel -->
+            <a class="carousel-control-prev" href="#noticiasCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#noticiasCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Siguiente</span>
+            </a>
+        </div>
+    </div>
+    
+    <!-- Modales de Noticias -->
+    <div id="modal1" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <p>Información adicional de la Noticia 1.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="modal2" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <p>Información adicional de la Noticia 2.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="modal3" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <p>Información adicional de la Noticia 3.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="modal4" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <p>Información adicional de la Noticia 4.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="modal5"
